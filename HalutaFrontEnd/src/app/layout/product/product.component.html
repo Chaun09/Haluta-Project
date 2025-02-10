@@ -1,3 +1,4 @@
+<app-banner></app-banner>
 <div class="product">
   <div class="product_title">
     <div class="product_logo"></div>
@@ -8,7 +9,7 @@
     <div class="product_detail" *ngFor="let product of visibleProducts">
       <img
         [src]="product.image"
-        [alt]="product.name"
+        alt="product.name"
         class="product_detail_img"
       />
       <div class="discount">
@@ -26,7 +27,7 @@
       <div class="product_rating">
         <img
           [src]="product.imageStar"
-          [alt]="product.name"
+          alt="product.name"
           class="product_rating_img"
         />
         <p>{{ product.rating }}</p>
