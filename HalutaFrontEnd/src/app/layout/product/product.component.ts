@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./product.component.scss'],
 })
 export class ProductComponent {
+  isShow = false;
   // Danh sách sản phẩm
   products: Array<{
     image: string;
@@ -191,20 +192,25 @@ export class ProductComponent {
   itemsToShow = 8;
   counter = 0;
   visibleProducts = this.products.slice(0, this.itemsToShow);
+
   // Hàm tải thêm sản phẩm
-  loadMore() {
-    this.counter += this.itemsToShow;
-    const nextProducts = this.products.slice(
-      this.counter,
-      this.counter + this.itemsToShow
-    );
-    this.visibleProducts = [...this.visibleProducts, ...nextProducts];
+  load() {
+    // this.counter += this.itemsToShow;
+    // const nextProducts = this.products.slice(
+    //   this.counter,
+    //   this.counter + this.itemsToShow
+    // );
+    // this.visibleProducts = [...this.visibleProducts, ...nextProducts];
+    this.isShow = !this.isShow;
+    this.visibleProducts = this.products.slice(0, this.itemsToShow * 2);
   }
   hidden() {
-    console.log(
-      (this.visibleProducts = this.visibleProducts.filter(
-        (visibleProducts) => visibleProducts.reviews == 24
-      ))
-    );
+    // this.counter -= this.counter;
+    // const nextProducts = this.products.slice(
+    //   this.counter,
+    //   this.counter + this.itemsToShow
+    // );
+    this.isShow = !this.isShow;
+    this.visibleProducts = this.products.slice(0, this.itemsToShow);
   }
 }

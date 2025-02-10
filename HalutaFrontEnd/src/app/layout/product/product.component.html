@@ -35,14 +35,14 @@
     </div>
   </div>
   <button
-    *ngIf="counter + itemsToShow < products.length"
-    (click)="loadMore()"
+    *ngIf="!isShow && products.length > 8"
+    (click)="load()"
     class="load-more"
   >
     Xem Thêm
   </button>
   <button
-    *ngIf="counter + itemsToShow > products.length"
+    *ngIf="isShow && products.length > 8"
     (click)="hidden()"
     class="load-more"
   >
