@@ -46,6 +46,7 @@
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  border-radius: 20px;
 }
 .product_detail:hover {
   transform: translateY(-4px);
@@ -55,6 +56,8 @@
   background-size: cover;
   width: 260px;
   height: 260px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .discount {
   display: flex;
