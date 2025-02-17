@@ -7,31 +7,23 @@
   <div class="bar"></div>
   <div id="product-container" class="product_total">
     <div class="product_detail" *ngFor="let product of visibleProducts">
-      <img
-        [src]="product.image"
-        alt="product.name"
-        class="product_detail_img"
-      />
+      <img [src]="product.image" alt="" class="product_detail_img" />
       <div class="discount">
-        <p>{{ product.discount }}</p>
+        <p>10%</p>
       </div>
       <div class="product_name">
-        <p>{{ product.name }}</p>
+        <p>{{ product.product_name }}</p>
       </div>
       <div class="product_price">
-        <p>{{ product.currentPrice }}</p>
+        <p>{{ product.new_price }}$</p>
         <p>
-          <del>{{ product.originalPrice }}</del>
+          <del>{{ product.old_price }}$</del>
         </p>
       </div>
       <div class="product_rating">
-        <img
-          [src]="product.imageStar"
-          alt="product.name"
-          class="product_rating_img"
-        />
-        <p>{{ product.rating }}</p>
-        <p>({{ product.reviews }})</p>
+        <img [src]="product.imageStar" alt="" class="product_rating_img" />
+        <p>{{ product.star_rating }}</p>
+        <p>({{ product.comment }})</p>
       </div>
     </div>
   </div>

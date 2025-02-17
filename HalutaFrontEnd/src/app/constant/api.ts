@@ -7,6 +7,10 @@ export const authenticate = {
   signUp: endPoints + 'auth/signup',
 };
 
+export const product = {
+  getAll: endPoints + 'product/get-all',
+};
+
 export const objectApi = {
   product: Url + `/product/`,
   cart: Url + `/cart/`,
