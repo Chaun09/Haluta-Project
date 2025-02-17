@@ -1,9 +1,9 @@
 package Haluta.example.demo.controller;
 
 
-import Haluta.example.demo.dto.Auth.*;
+import Haluta.example.demo.dto.auth.*;
 import Haluta.example.demo.entity.Customer;
-import Haluta.example.demo.response.ResponseMessage;
+import Haluta.example.demo.dto.response.ResponseMessage;
 import Haluta.example.demo.services.auth.AuthService;
 
 import jakarta.validation.Valid;

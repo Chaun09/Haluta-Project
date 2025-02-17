@@ -1,4 +1,4 @@
-package Haluta.example.demo.enums.Role;
+package Haluta.example.demo.enums.role;
 import lombok.*;
 @RequiredArgsConstructor
 public enum CustomerRole {

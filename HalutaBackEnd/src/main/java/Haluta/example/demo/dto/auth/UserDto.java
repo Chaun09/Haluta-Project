@@ -1,7 +1,5 @@
-package Haluta.example.demo.dto.Auth;
+package Haluta.example.demo.dto.auth;
 
-
-import Haluta.example.demo.enums.Role.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.*;

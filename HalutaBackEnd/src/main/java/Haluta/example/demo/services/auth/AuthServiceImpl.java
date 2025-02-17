@@ -1,9 +1,9 @@
 package Haluta.example.demo.services.auth;
 
-import Haluta.example.demo.dto.Auth.*;
+import Haluta.example.demo.dto.auth.*;
 import Haluta.example.demo.entity.Customer;
-import Haluta.example.demo.enums.Role.CustomerRole;
-import Haluta.example.demo.enums.Role.UserRole;
+import Haluta.example.demo.enums.role.CustomerRole;
+import Haluta.example.demo.enums.role.UserRole;
 import Haluta.example.demo.exception.ConflictException;
 import Haluta.example.demo.exception.InvalidException;
 import Haluta.example.demo.repository.CustomerRepository;

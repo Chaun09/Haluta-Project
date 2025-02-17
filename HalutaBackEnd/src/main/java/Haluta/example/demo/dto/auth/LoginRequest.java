@@ -1,4 +1,4 @@
-package Haluta.example.demo.dto.Auth;
+package Haluta.example.demo.dto.auth;
 
 import jakarta.validation.constraints.*;
 import lombok.*;
